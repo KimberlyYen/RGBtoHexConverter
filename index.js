@@ -34,8 +34,8 @@ function rgbToHex(R, G, B) {
 
 function change(changeColorToBe) {
   console.log(changeColorToBe)
-  const hexClass = document.querySelector(".hex");
-  hexClass.style.setProperty("background-color", `${changeColorToBe}`);
-
   document.querySelector("#hex-color").value = changeColorToBe
+  hexClass.style.setProperty("background-color", `${changeColorToBe}`);
+  const hexClass = document.querySelector(".hex");
 }
+
