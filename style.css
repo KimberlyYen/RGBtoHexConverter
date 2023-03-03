@@ -1,21 +1,5 @@
 :root {
-  --primary: Aquamarine;
-  --background-color-red: rgb(255, 0, 0);
-  --background-color-green: rgb(0, 255, 0);
-  --background-color-blue: rgb(0, 0, 255);
-}
-
-.r .box {
-  /* background-color: rgb(255, 0, 0); */
-  background: var(--background-color-red);
-}
-
-.g .box {
-  background: var(--background-color-green);
-}
-
-.b .box {
-  background: var(--background-color-blue);
+  --main-bg-color: #112233;
 }
 
 * {
@@ -23,6 +7,14 @@
 }
 body {
   margin: 50px;
+}
+
+.hex {
+  width: 100px;
+  height: 100px;
+  margin-left: 0px;
+  margin-top: 20px;
+  background-color: var(--main-bg-color);
 }
 
 .container {
@@ -47,14 +39,6 @@ body {
   margin: 3px 0px 0px 8px;
   border-radius: 4px;
   box-sizing: border-box;
-}
-
-.hex {
-  width: 100px;
-  height: 100px;
-  margin-left: 0px;
-  margin-top: 20px;
-  background-color: rgb(229, 147, 5);
 }
 
 .r,
