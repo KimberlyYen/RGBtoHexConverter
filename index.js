@@ -32,10 +32,19 @@ function rgbToHex(R, G, B) {
 }
 
 
+const hexClass = document.querySelector(".hex");
+
 function change(changeColorToBe) {
+
+
+
   console.log(changeColorToBe)
-  document.querySelector("#hex-color").value = changeColorToBe
+
+
+document.querySelector("#hex-color").value = `${changeColorToBe}`
+
+  // hexId.style.getPropertyValue("--main-bg-color", `${changeColorToBe}`);
+  
   hexClass.style.setProperty("background-color", `${changeColorToBe}`);
-  const hexClass = document.querySelector(".hex");
 }
 
