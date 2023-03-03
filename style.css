@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: #112233;
+  --main-bg-color: #ec2222;
 }
 
 * {
@@ -15,6 +15,7 @@ body {
   margin-left: 0px;
   margin-top: 20px;
   background-color: var(--main-bg-color);
+  border: 1px darkgray solid;
 }
 
 .container {

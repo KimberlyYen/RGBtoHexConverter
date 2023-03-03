@@ -14,10 +14,8 @@ button.addEventListener("click", () => {
   const colorB = document.querySelector("#b-color").value;
 
   //  十六進制轉換 1. 拿到三個數字
-  // console.log(colorR, colorG, colorB)
   rgbToHex(colorR, colorG, colorB);
-  hex = 333333
-  
+  change()
 });
 
 
@@ -29,14 +27,15 @@ function rgbToHex(R, G, B) {
   .join("");
   
   //  十六進制轉換 2. 套用公式得到十六進制
-  console.log("#" + `${hexDigit}`)
+  let changeColorToBe = `#${hexDigit}`
+  return change(changeColorToBe)
 }
 
-// //  十六進制轉換 3. 給到 HEX CSS 變數 顯示於畫面
-// const newBgColor = rgbToHex();
-// console.log(newBgColor)
-// // const box = document.querySelector(".hex");
-// // box.style.setProperty("background-color", newBgColor);
 
-// // return "#" + `${hexDigit}`
+function change(changeColorToBe) {
+  console.log(changeColorToBe)
+  const hexClass = document.querySelector(".hex");
+  hexClass.style.setProperty("background-color", `${changeColorToBe}`);
 
+  document.querySelector("#hex-color").value = changeColorToBe
+}
